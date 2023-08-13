@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      const month = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+      function showDate() {
+        let today = new Date();
+        let format1 =
+          today.getDate() +
+          "-" +
+          month[today.getMonth()] +
+          "-" +
+          today.getFullYear();
+
+        let format2 =
+          today.getDate() +
+          "/" +
+          month[today.getMonth()] +
+          "/" +
+          today.getFullYear();
+        document.writeln(format1 + " , " + format2);
+      }
+      showDate();
+    </script>
+  </body>
+</html>

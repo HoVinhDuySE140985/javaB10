@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      function calcAcreage(a, b, c) {
+        let p = (Number(a) + Number(b) + Number(c)) / 2;
+        let res = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        document.writeln(res);
+      }
+      let a = prompt("Nhap a", 5);
+      let b = prompt("Nhap b", 6);
+      let c = prompt("Nhap c", 7);
+      calcAcreage(a, b, c);
+    </script>
+  </body>
+</html>
