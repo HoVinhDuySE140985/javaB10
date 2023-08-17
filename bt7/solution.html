@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      function checkSunday() {
+        for (let i = 2014; i <= 2050; i++) {
+          let sepecial = new Date(i, 0, 0);
+          if (sepecial.getDay == 0) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+      }
+      console.log(checkSunday());
+    </script>
+  </body>
+</html>

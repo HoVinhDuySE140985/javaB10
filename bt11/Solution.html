@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      function converttemperature(C, F) {
+        let c = ((F - 32) / 9) * 5;
+        alert("Độ C = " + c);
+        let f = (C / 5) * 9 + 32;
+        alert("Độ F = " + f);
+      }
+      let C = prompt("Nhap C :", 0);
+      let F = prompt("Nhap F :", 0);
+      console.log(converttemperature(C, F));
+    </script>
+  </body>
+</html>

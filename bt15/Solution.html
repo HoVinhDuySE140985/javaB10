@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      function calcNumber(number) {
+        if (isNaN(number)) return undefined;
+        if (number > 13) {
+          alert(Math.abs(number - 13) * 2);
+        } else {
+          alert(number - 13);
+        }
+      }
+      let number = prompt("Nhap number ", 0);
+      console.log(calcNumber(number));
+    </script>
+  </body>
+</html>

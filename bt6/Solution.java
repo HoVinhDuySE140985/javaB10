@@ -1,4 +1,4 @@
-package javab10.bt5;
+package javab10.bt6;
 
 import java.time.LocalDate;
 

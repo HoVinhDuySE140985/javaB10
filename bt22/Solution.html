@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      function removeCharter(string, pos) {
+        let ss = "";
+        for (let i = 0; i < string.length; i++) {
+          if (i == pos) {
+            ss = string.replace(string[5], "");
+          }
+        }
+        return ss;
+      }
+      let string = "hellobro";
+      let pos = prompt("Nhap vi tri", "Nhap vao day");
+      alert(removeCharter(string, pos));
+    </script>
+  </body>
+</html>
