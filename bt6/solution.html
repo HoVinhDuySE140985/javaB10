@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      function checkYear(year) {
+        if(isNaN(year)) return undefined;
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      let year = prompt("Nhap Nam :", 0);
+      console.log(checkYear(year));
+    </script>
+  </body>
+</html>

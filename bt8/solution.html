@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      function getRandom(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+      function matchingNumber(number) {
+        let min = 1;
+        let max = 10;
+        let randomNumber = Math.round(getRandom(min, max));
+        console.log(randomNumber);
+        if (number == randomNumber) {
+          return "lam tot lam";
+        } else {
+          return "Khong khop";
+        }
+      }
+      let number = prompt("Nhap so :", 0);
+      console.log(matchingNumber(number));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      function checkNumber(number1, number2) {
+        if (
+          number1 == 50 ||
+          number2 == 50 ||
+          Number(number1) + Number(number2) == 50
+        ) {
+          alert(true);
+        } else {
+          alert(false);
+        }
+      }
+      let number1 = prompt("Nhap number1:", "Nhap so");
+      let number2 = prompt("Nhap number2 :", "Nhap so");
+      console.log(checkNumber(number1, number2));
+    </script>
+  </body>
+</html>

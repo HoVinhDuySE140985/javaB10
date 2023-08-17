@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      function reverseString(str) {
+        let arr = str.split("");
+        let reverArr = arr.reverse();
+        let res = reverArr.join("");
+        return res;
+      }
+      let input = prompt("Nhap Chuoi", "...");
+      let tmp = reverseString(input);
+      if (tmp.startsWith("Java")) {
+        alert(true);
+      } else {
+        alert(false);
+      }
+    </script>
+  </body>
+</html>
